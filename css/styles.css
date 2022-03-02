@@ -14,7 +14,7 @@ a {
 /* ===================MENU======================= */
 h5 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.9rem;
 
     text-shadow: 1px 1px 2px black, 0 0 1em rgb(117, 117, 199),
         0 0 0.2em rgb(236, 159, 200);
@@ -47,6 +47,7 @@ nav#menu {
 
 .card {
     background-color: rgba(190, 95, 119, 0.253);
+    align-items: center;
 }
 
 /* ===================SLIDER DE IMAGENES====================== */
@@ -90,12 +91,78 @@ nav#menu {
 }
 
 
-
 /* ===================MEDIA QUERIES====================== */
 
-@media (max-width:1200px) {
+@media (min-width:1200px) {
     body {
-        background-color: rgba(237, 100, 168, 0.281);
+        background-color: rgba(255, 2, 171, 0.226);
+    }
+    nav#menu {
+
+
+        background-color: #f5f5f5;
+        background-image: linear-gradient(to right, #e97be498, rgba(211, 137, 137, 0.363)) !important;
+    }
+/* 
+    #local {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 30px;
+
+    } */
+   
+     h5 {
+        font-size: 2rem;
+    }
+     .team > p{
+        font-size: 1.3rem;
+    }
+
+
+}
+
+@media (min-width:576px) and (max-width:1200px)  {
+    nav#menu {
+
+
+        background-color: #f5f5f5;
+        background-image: linear-gradient(to right, #85c29c94, rgba(137, 211, 143, 0.363)) !important;
+    }
+    body {
+        background-color: rgba(19, 255, 184, 0.11);
+
+    }
+
+    .icono-wrap {
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .team p{
+        font-size: 1.3rem;
+    }
+    h5 {
+        font-size: 1.8rem;
+    }
+    #local {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 30px;
+
+    }
+}
+
+
+@media (max-width:576px) {
+    body {
+        background-color: rgba(202, 118, 165, 0.541);
+
+    }
+    nav#menu {
+
+
+        background-color: #f5f5f5;
+        background-image: linear-gradient(to left, #c57ece94, rgba(211, 119, 142, 0.671)) !important;
     }
 
     #local {
@@ -105,16 +172,6 @@ nav#menu {
 
     }
 
-}
-
-
-@media (max-width:768px) {
-    body {
-        background-color: rgba(231, 149, 149, 0.739);
-
-    }
-
-
 
     #intro, #equipo {
         width: 90% !important;
@@ -123,20 +180,11 @@ nav#menu {
     #equipo p {
         display: none;
     }
-
-}
-
-@media (min-width:576px) {
-    nav#menu {
-
-
-        background-color: #f5f5f5;
-        background-image: linear-gradient(to left, #eebebe94, rgba(170, 81, 103, 0.657)) !important;
+    
+    .team p{
+        font-size: 1rem;
     }
-
-    .icono-wrap {
-
-        flex-wrap: wrap;
-        justify-content: center;
+    h5 {
+        font-size: 1.5rem;
     }
 }
