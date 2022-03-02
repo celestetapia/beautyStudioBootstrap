@@ -1,13 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Hubballi', cursive;
     overflow-x: hidden;
     margin: 0.7%;
     background-color: #e08b8b80;
 }
+a {
+    text-decoration: none;
+}
 
 /* ===================MENU======================= */
+h5 {
+    text-align: center;
+    font-size: 2rem;
+
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(117, 117, 199),
+        0 0 0.2em rgb(236, 159, 200);
+    color: white;
+}
 
 nav#menu {
     background-color: #f5f5f5;
@@ -31,10 +43,16 @@ nav#menu {
 }
 
 
+/* ===================CARD====================== */
+
+.card {
+    background-color: rgba(190, 95, 119, 0.253);
+}
+
 /* ===================SLIDER DE IMAGENES====================== */
 
 .carousel-inner {
-    max-height: 40rem;
+    max-height: 30rem;
 }
 
 
@@ -45,26 +63,22 @@ nav#menu {
     width: 100%;
 }
 
-#local {
+#local, #servicios {
     background: #f3f3f3;
-    padding-bottom: 70px;
+
     display: flex;
     align-items: center;
 }
 
 .wrapper {
-    width: 50%;
-    margin-left: 80px;
-    padding-top: 80px;
+
+    margin-top: 5%;
+    padding-top: 2%px;
+    padding-right: 1%;
+    padding-bottom: 5%;
 
 }
 
-#numeros-local div {
-
-    padding: 0 20px 0 0;
-    height: 48px;
-
-}
 
 #numeros-local div:not(:last-child) {
     border-right: 2px solid #3f3f3f;
@@ -86,15 +100,11 @@ nav#menu {
 
     #local {
         flex-wrap: wrap;
+        justify-content: center;
         padding-top: 30px;
 
     }
 
-    .wrapper {
-        width: 90%;
-        margin: auto;
-        padding-top: 50px;
-    }
 }
 
 
@@ -114,19 +124,11 @@ nav#menu {
         display: none;
     }
 
-    .servicio-fila {
-        width: 100% !important;
-        text-align: center;
-    }
-
-
-
 }
 
 @media (min-width:576px) {
     nav#menu {
 
-        /* background-color: rgba(233, 122, 243, 0.548) !important; */
 
         background-color: #f5f5f5;
         background-image: linear-gradient(to left, #eebebe94, rgba(170, 81, 103, 0.657)) !important;

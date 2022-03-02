@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags -->
@@ -13,15 +13,44 @@
     <!-- Link css -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Beauty Studio</title>
+    <!-- Link wowanimaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
 </head>
 
 <body>
 
     <!-- =============================== -->
-    <!-- ENCABEZADO-->
+    <!-- SLIDE DE CONTACTO-->
     <!-- =============================== -->
-    <header class="container-fluid d-flex justify-content-center bg-light mb-2">
-        <p class="text-dark mb-0 p-2 fs-6">Contactanos 54 9 (3834) 696377</p>
+    <header id="carouselExampleControls" class="carousel slide  bg-light mb-2" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <p class="text-dark mb-0 p-2 fs-6 text-center">Contactanos en:</p>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <p class="text-dark mb-0 p-2 fs-6 text-center"><i class="fa-solid fa-phone"
+                        style="color: cornflowerblue;"></i> 54 9 (3834) 696377</p>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <p class="text-dark mb-0 p-2 fs-6 text-center"><i class="fa-regular fa-envelope"
+                        style="color: cornflowerblue;"></i> info@beautystud.com.ar </p>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <p class="text-dark mb-0 p-2 fs-6 text-center">O a través de nuestreas Redes Sociales:</p>
+            </div>
+            <div class="carousel-item text-center" data-bs-interval="4000">
+                <a href="https://www.facebook.com/celeste.tapia.98/about"><i class="fa-brands fa-facebook"
+                        style="font-size: 2rem; padding: 4px; color: cornflowerblue;"></i></a>
+                <a href="https://www.instagram.com/sunmygosh/?hl=es"><i class="fa-brands fa-instagram"
+                        style="font-size: 2rem; padding: 4px; color: cornflowerblue;"></i></a>
+                <a href="https://twitter.com/422cele"><i class="fa-brands fa-twitter"
+                        style="font-size: 2rem; padding: 4px; color: cornflowerblue;"></i></a>
+
+
+            </div>
+        </div>
+
     </header>
 
 
@@ -29,20 +58,20 @@
     <!-- NAVBAR-->
     <!-- =============================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 mb-2" id="menu">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <span class="text-secondary fs-5 fw-bold">Beauty Studio</span>
+        <div class="container-fluid mb-2">
+            <a class="navbar-brand" href="/index.html">
+                <span class="text-light fs-3 fw-bold"style="text-shadow: 0 0 8px black; color: white;">Beauty Studio</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler" style="border-color: aliceblue;;" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
 
                     <li class="nav-item">
@@ -51,40 +80,35 @@
                     <li class="nav-item">
                         <a class="nav-link" href="pages/servicios.html">Servicios</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="pages/galeria.html">Galeria</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
-
-                <form class="d-flex">
-                    <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
-                    <button class="btn btn-secondary btn-primary outline-success" type="button">enviar</button>
-                </form>
             </div>
         </div>
     </nav>
 
 
     <!-- =============================== -->
-    <!-- SLIDER DE IMAGENES-->
+    <!-- CAROUSEL DE IMAGENES-->
     <!-- =============================== -->
 
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
-            <div class="carousel-item active" data-bs-interval="2000">
+            <div class="carousel-item active" data-bs-interval="8000">
                 <img src="./img/fotos1800.jpg" class="d-block w-100" alt="slide1">
             </div>
 
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="8000">
                 <img src="./img/fotos18003.jpg" class="d-block w-100" alt="slide2">
             </div>
 
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="8000">
                 <img src="./img/pedicure1800.jpg" class="d-block w-100" alt="slide3">
             </div>
 
@@ -121,117 +145,136 @@
     <!-- =============================== -->
 
 
-    <section class="w-50 mx-auto text-center pt-5" id="intro">
-        <h1 class="p-3 fs-2 border-top border-3">Realzamos la belleza individual con <span
-                class="text-primary">tecnologías de punta y un servicio personalizado.</span>
-            <p class="p-3 fs-4">Nuestro equipo profesional está listo para brindarle el mejor servicio que jamás haya
-                tenido.
+    <section class="w-50 mx-auto text-center pt-4" id="intro">
+        <h1 class="p-3 fs-2 border-top border-3 animate__animated animate__fadeInLeft">Realzamos la belleza individual
+            con <span style="text-shadow: 0 0 8px black; color: white;">tecnologías de punta y un servicio
+                personalizado.</span>
+
         </h1>
+        <p class="p-3 fs-4 animate__animated animate__fadeInRight">Nuestro equipo profesional está listo para brindarle
+            el mejor servicio que jamás haya
+            tenido.
     </section>
 
     <!-- =============================== -->
     <!-- SERVICIOS-->
     <!-- =============================== -->
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-8 cs">
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/pestanas.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Manicure</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="pages/contacto.html" class="btn btn-secondary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/ojos.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pedicure</h5>
-              <p class="card-text">his is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer..</p>
-              <a href="#" class="btn btn-secondary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/pedicure22.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pestañas</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-secondary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/ojos.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Cejas</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-secondary">Button</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- =============================== -->
-        <!-- ACERCA DE NOSOTROS-->
-        <!-- =============================== -->
-        <section>
-            <div class="w-75 m-auto text-center mt-4" id="equipo">
-                <h1 class="mb-5 fs-2">Nuestro equipo <span class="text-primary">BeautyStudio</span></h1>
-                <p class="fs-4">Lia. Molestiae, dolore modi sed sequi vitae laborum.</p>
-            </div>
-            <div class="mt-5 text-center mb-2">
-                <img class="img-fluid" src="/img/collage.png" alt="equipo">
-
-            </div>
-
-            <div id="local" class="border-top border-2">
-                <div class="mapa ">
-
-
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.258192980574!2d-64.182454785562!3d-31.40701170293968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329876d877c74f%3A0x8f7b1fdb8513bd1!2zU2FuIE1hcnTDrW4gNzk5LCBDw7NyZG9iYQ!5e0!3m2!1ses-419!2sar!4v1645489887999!5m2!1ses-419!2sar"
-                        width="100%" height="100%" style="margin-left: 2%; margin-right: 2%;" allowfullscreen="" loading="lazy">
-                    </iframe>
-
-                </div>
-                <div>
-                    <div class="wrapper">
-                        <h2>Ubicado en Córdoba, Argentina</h2>
-                        <h2 class="text-primary mb-4" id="typewriter"></h2>
-                        <p class="fs-5 text-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
-                            nostrum molestiae,</p>
-
-                        <section class="d-flex" id="numeros-local">
-                            <div>
-                                <p class="text-primary fs-5">248</p>
-                                <p>Dias de Sol</p>
-
-                            </div>
-                            <div>
-                                <p class="text-primary fs-5">100%</p>
-                                <p>Aprobado</p>
-
-                            </div>
-                            <div>
-                                <p class="text-primary fs-5">24 °C</p>
-                                <p>Temperatura</p>
-
-                            </div>
-                        </section>
-                    </div>
+    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 d-flex animate__animated animate__fadeIn"
+        style="justify-content: center; margin-left: 4%; margin-right: 4%;">
+        <div class="col my-2">
+            <div class="card ">
+                <img src="img/pestanas.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Manicure</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <a href="/pages/servicios.html" class="btn btn-secondary d-flex"
+                        style="justify-content: center;">ver más</a>
                 </div>
             </div>
+        </div>
+        <div class="col my-2">
+            <div class="card ">
+                <img src="img/ojos.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pedicure</h5>
+                    <p class="card-text">his is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer..</p>
+                    <a href="/pages/servicios.html" class="btn btn-secondary d-flex"
+                        style="justify-content: center;">ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col my-2">
+            <div class="card ">
+                <img src="img/pedicure22.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pestañas</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <a href="/pages/servicios.html" class="btn btn-secondary d-flex"
+                        style="justify-content: center;">ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col my-2">
+            <div class="card ">
+                <img src="img/ojos.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cejas</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <a href="/pages/servicios.html" class="btn btn-secondary d-flex"
+                        style="justify-content: center;">ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        </section>
+    <!-- =============================== -->
+    <!-- ACERCA DE NOSOTROS-->
+    <!-- =============================== -->
+    <section>
+        <div class="m-auto text-center mt-4" id="equipo">
+            <h1 class="mb-5 fs-2">Nuestro equipo <span
+                    style="text-shadow: 0 0 8px black; color: white;">BeautyStudio</span></h1>
+            <p class="fs-4">Lia. Molestiae, dolore modi sed sequi vitae laborum.</p>
+        </div>
+        <div class="mt-2 text-center mb-2">
+            <img class="img-fluid" src="/img/collage.png" alt="equipo">
 
-        <!-- Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
-    </body>
+        </div>
+    </section>
+
+
+    <!-- =============================== -->
+    <!-- HORARIOS Y UBICACION-->
+    <!-- =============================== -->
+    <div id="local" class="col mt-5 mb-5">
+        <div class="mapa row-cols-md-1 d-flex">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.258192980574!2d-64.182454785562!3d-31.40701170293968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329876d877c74f%3A0x8f7b1fdb8513bd1!2zU2FuIE1hcnTDrW4gNzk5LCBDw7NyZG9iYQ!5e0!3m2!1ses-419!2sar!4v1645489887999!5m2!1ses-419!2sar"
+                width="100%" height="100%" style="margin-right: 2%; margin-left: 2%;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+        </div>
+        <div class="row-cols-md-1">
+
+        </div>
+        <div class="col-md-5" style="margin: 2%;">
+            <h2 class="d-flex text-center" style="justify-content: center; margin-top: 25px;">Ubicado en
+                Córdoba-Argentina</h2>
+            <hr>
+            <h2 class="d-flex text-center text-secondary" style="justify-content: center; margin-top: 10px;">Horarios de
+                Atención</h2>
+
+            <div class="wrapper  d-flex" style="justify-items: center;">
+
+                <ul class="list-inline mx-auto" style="font-size: 1.35em;">
+                    <li>
+                        Lunes a viernes: 9:30am — 8:00pm
+                    </li>
+                    <li>
+                        Sábado: 9:30 am — 7:00 pm
+                    </li>
+                    <li>
+                        Domingo: 10:00 am — 6:00 pm
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- icon -->
+
+    <script src="https://kit.fontawesome.com/8c005eaf66.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
