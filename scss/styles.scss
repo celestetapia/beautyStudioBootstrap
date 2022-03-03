@@ -1,0 +1,51 @@
+/* ===================VARIABLES GLOBALES====================== */
+$whiteShadow: 0 0 8px black;
+$colorCard: rgba(190, 95, 119, 0.253);
+
+/* ===================BODY====================== */
+body {
+  font-family: "Hubballi", cursive;
+  overflow-x: hidden;
+  margin: 0.7%;
+  a {
+    text-decoration: none;
+  }
+}
+
+/* ===================MENU====================== */
+#menu {
+  /* VARIABLES LOCALES */
+  $colorAnchors: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navbar-brand {
+    text-shadow: $whiteShadow;
+  }
+
+  li {
+    text-transform: uppercase;
+    a {
+      font-size: 18px;
+      font-weight: bold;
+      color: $colorAnchors;
+      &.active {
+        color: rgba(156, 115, 197, 0.562);
+        text-shadow: $whiteShadow;
+      }
+    }
+  }
+}
+
+/* ===================CARD====================== */
+.card {
+  background-color: $colorCard;
+  align-items: center;
+}
+
+.subRayado {
+  text-shadow: $whiteShadow;
+  color: white;
+}

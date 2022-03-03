@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 
-
-body {
-    font-family: 'Hubballi', cursive;
-    overflow-x: hidden;
-    margin: 0.7%;
-    background-color: #e08b8b80;
-}
-a {
-    text-decoration: none;
-}
-
 /* ===================MENU======================= */
 h5 {
     text-align: center;
@@ -21,34 +10,6 @@ h5 {
     color: white;
 }
 
-nav#menu {
-    background-color: #f5f5f5;
-    background-image: linear-gradient(to left, #d6868694, rgba(233, 108, 91, 0.781)) !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-#menu li>a {
-    font-size: 18px;
-    font-weight: bold;
-    color: #3f3f3f;
-
-}
-
-#menu form>button {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-
-/* ===================CARD====================== */
-
-.card {
-    background-color: rgba(190, 95, 119, 0.253);
-    align-items: center;
-}
 
 /* ===================SLIDER DE IMAGENES====================== */
 
@@ -98,19 +59,10 @@ nav#menu {
         background-color: rgba(255, 2, 171, 0.226);
     }
     nav#menu {
-
-
         background-color: #f5f5f5;
         background-image: linear-gradient(to right, #e97be498, rgba(211, 137, 137, 0.363)) !important;
     }
-/* 
-    #local {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 30px;
 
-    } */
-   
      h5 {
         font-size: 2rem;
     }
@@ -123,8 +75,6 @@ nav#menu {
 
 @media (min-width:576px) and (max-width:1200px)  {
     nav#menu {
-
-
         background-color: #f5f5f5;
         background-image: linear-gradient(to right, #85c29c94, rgba(137, 211, 143, 0.363)) !important;
     }
