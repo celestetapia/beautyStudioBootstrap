@@ -69,7 +69,9 @@ h5 {
      .team > p{
         font-size: 1.3rem;
     }
-
+    #intro p {
+        font-size: x-large;
+    }
 
 }
 
@@ -99,6 +101,9 @@ h5 {
         justify-content: center;
         padding-top: 30px;
 
+    }
+    #intro p {
+        font-size: large;
     }
 }
 

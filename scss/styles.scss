@@ -33,7 +33,12 @@ body {
       color: $colorAnchors;
       &.active {
         color: rgba(156, 115, 197, 0.562);
-        text-shadow: $whiteShadow;
+        border-top-width: 2px;
+        border-top-style: dotted;
+        border-top-color: sienna;
+        border-bottom-width: 2px;
+        border-bottom-style: dotted;
+        border-bottom-color: sienna;
       }
     }
   }
