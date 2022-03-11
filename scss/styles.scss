@@ -1,10 +1,13 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
 /* ===================VARIABLES GLOBALES====================== */
 $whiteShadow: 0 0 8px black;
 $colorCard: rgba(190, 95, 119, 0.253);
 
 /* ===================BODY====================== */
 body {
-  font-family: "Hubballi", cursive;
+  font-family: 'DM Serif Text', serif;
   overflow-x: hidden;
   margin: 0.7%;
   a {

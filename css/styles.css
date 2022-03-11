@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
-
 /* ===================MENU======================= */
 h5 {
     text-align: center;
@@ -69,8 +67,18 @@ h5 {
      .team > p{
         font-size: 1.3rem;
     }
-    #intro p {
+    #intro p, #servicios li {
         font-size: x-large;
+    }
+    
+    #servicios {
+        background-image: url("../img/slide10.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        color: white;
+        text-shadow: #3f3f3f;
     }
 
 }
@@ -102,7 +110,7 @@ h5 {
         padding-top: 30px;
 
     }
-    #intro p {
+    #intro p, #servicios li {
         font-size: large;
     }
 }
