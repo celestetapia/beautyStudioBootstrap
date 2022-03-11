@@ -40,3 +40,8 @@ body {
 .subRayado {
   text-shadow: 0 0 8px black;
   color: white; }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
