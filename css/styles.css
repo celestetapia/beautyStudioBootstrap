@@ -49,6 +49,14 @@ h5 {
     margin: 0;
 }
 
+.parrafoDeInformacion {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(235, 236, 236, 0.473);
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
 
 /* ===================MEDIA QUERIES====================== */
 
@@ -70,17 +78,6 @@ h5 {
     #intro p, #servicios li {
         font-size: x-large;
     }
-    
-    #servicios {
-        background-image: url("../img/slide10.jpg");
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: transparent;
-        color: white;
-        text-shadow: #3f3f3f;
-    }
-
 }
 
 @media (min-width:576px) and (max-width:1200px)  {
