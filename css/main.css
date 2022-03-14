@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center; }
   #menu .navbar-brand {
-    text-shadow: 0 0 8px black; }
+    text-shadow: 0 0 8px #ce7676; }
   #menu li {
     text-transform: uppercase; }
     #menu li a {
@@ -34,14 +34,30 @@ body {
 
 /* ===================CARD====================== */
 .card {
-  background-color: rgba(190, 95, 119, 0.253);
+  background-color: rgba(255, 255, 255, 0.541);
   align-items: center; }
-
-.subRayado {
-  text-shadow: 0 0 8px black;
-  color: white; }
 
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+/* ===================SUBRAYADO====================== */
+.subRayado {
+  text-shadow: 0 0 8px #ce7676;
+  color: #9b358d; }
+
+.icono--twitter {
+  color: #8feeff;
+  font-size: 2rem;
+  padding: 4px; }
+
+.icono--facebook {
+  color: #978fff;
+  font-size: 2rem;
+  padding: 4px; }
+
+.icono--instagram {
+  color: #dc8fff;
+  font-size: 2rem;
+  padding: 4px; }

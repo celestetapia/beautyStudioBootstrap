@@ -2,7 +2,6 @@
 h5 {
     text-align: center;
     font-size: 1.9rem;
-
     text-shadow: 1px 1px 2px black, 0 0 1em rgb(117, 117, 199),
         0 0 0.2em rgb(236, 159, 200);
     color: white;
@@ -10,14 +9,11 @@ h5 {
 
 
 /* ===================SLIDER DE IMAGENES====================== */
-
 .carousel-inner {
     max-height: 30rem;
 }
 
-
 /* ===================UBICACION Y HORARIOS====================== */
-
 .mapa {
     display: flex;
     width: 100%;
@@ -25,18 +21,15 @@ h5 {
 
 #local, #servicios {
     background: #f3f3f3;
-
     display: flex;
     align-items: center;
 }
 
 .wrapper {
-
     margin-top: 5%;
     padding-top: 2%px;
     padding-right: 1%;
     padding-bottom: 5%;
-
 }
 
 
@@ -49,9 +42,14 @@ h5 {
     margin: 0;
 }
 
+p {
+    color: darkmagenta;
+}
+
 .parrafoDeInformacion {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba(235, 236, 236, 0.473);
     padding: 1rem 1rem;
     margin-top: 1rem;
@@ -89,9 +87,7 @@ h5 {
         background-color: rgba(19, 255, 184, 0.11);
 
     }
-
     .icono-wrap {
-
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -116,11 +112,9 @@ h5 {
 @media (max-width:576px) {
     body {
         background-color: rgba(202, 118, 165, 0.541);
-
     }
+
     nav#menu {
-
-
         background-color: #f5f5f5;
         background-image: linear-gradient(to left, #c57ece94, rgba(211, 119, 142, 0.671)) !important;
     }
@@ -129,9 +123,7 @@ h5 {
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 30px;
-
     }
-
 
     #intro, #equipo {
         width: 90% !important;

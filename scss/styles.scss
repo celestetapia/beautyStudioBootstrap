@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
 
 /* ===================VARIABLES GLOBALES====================== */
-$whiteShadow: 0 0 8px black;
-$colorCard: rgba(190, 95, 119, 0.253);
+$whiteShadow: 0 0 8px rgb(206, 118, 118);
+$colorCard: rgba(255, 255, 255, 0.541);
 
 /* ===================BODY====================== */
 body {
@@ -19,7 +19,6 @@ body {
 #menu {
   /* VARIABLES LOCALES */
   $colorAnchors: white;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,13 +52,28 @@ body {
   align-items: center;
 }
 
-.subRayado {
-  text-shadow: $whiteShadow;
-  color: white;
-}
-
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* ===================SUBRAYADO====================== */
+.subRayado {
+  text-shadow: $whiteShadow;
+  color: rgb(155, 53, 141);
+}
+
+$redes: ( /* Definicion de mapas de redes sociales */
+  twitter: rgb(143, 238, 255),
+  facebook: rgb(151, 143, 255),
+  instagram: rgb(220, 143, 255),
+);
+
+@each $red, $color in $redes {
+  .icono--#{$red}{
+    color: $color;
+    font-size: 2rem;
+    padding: 4px;
+  }
 }
