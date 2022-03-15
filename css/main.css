@@ -1,14 +1,23 @@
 /* IMPORTS */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
-/* ===================VARIABLES GLOBALES====================== */
-/* ===================BODY====================== */
-body {
-  font-family: 'DM Serif Text', serif;
-  overflow-x: hidden;
-  margin: 0.7%; }
-  body a {
-    text-decoration: none; }
+/* ===================MAPAS====================== */
+/* ===================MIXINS====================== */
+.boton, .boton--enviar, .boton--ver--mas {
+  border-radius: 20px;
+  border: 2px solid black;
+  border-color: whitesmoke;
+  font-size: 1.2rem; }
 
+.boton--enviar {
+  background-color: rgba(167, 45, 179, 0.459);
+  padding: 1% 6%; }
+
+.boton--ver--mas {
+  background-color: rgba(90, 37, 134, 0.527);
+  color: whitesmoke; }
+
+/* ===================MAPAS====================== */
+/* ===================MIXINS====================== */
 /* ===================MENU====================== */
 #menu {
   /* VARIABLES LOCALES */
@@ -25,13 +34,14 @@ body {
       color: white; }
       #menu li a.active {
         color: rgba(156, 115, 197, 0.562);
+        border-top-color: sienna;
+        border-bottom-color: sienna;
         border-top-width: 2px;
         border-top-style: dotted;
-        border-top-color: sienna;
         border-bottom-width: 2px;
-        border-bottom-style: dotted;
-        border-bottom-color: sienna; }
+        border-bottom-style: dotted; }
 
+/* ===================MAPAS====================== */
 /* ===================CARD====================== */
 .card {
   background-color: rgba(255, 255, 255, 0.541);
@@ -41,11 +51,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-
-/* ===================SUBRAYADO====================== */
-.subRayado {
-  text-shadow: 0 0 8px #ce7676;
-  color: #9b358d; }
 
 .icono--twitter {
   color: #8feeff;
@@ -61,3 +66,16 @@ body {
   color: #dc8fff;
   font-size: 2rem;
   padding: 4px; }
+
+/* ===================BODY====================== */
+body {
+  font-family: 'DM Serif Text', serif;
+  overflow-x: hidden;
+  margin: 0.7%; }
+  body a {
+    text-decoration: none; }
+
+/* ===================SUBRAYADO====================== */
+.subRayado {
+  text-shadow: 0 0 8px #ce7676;
+  color: #9b358d; }

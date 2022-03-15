@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+
+/* ===================MENU====================== */
+#menu {
+  /* VARIABLES LOCALES */
+  $colorAnchors: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navbar-brand {
+    text-shadow: map-get($variablesGlobales,whiteShadow);
+  }
+
+  li {
+    text-transform: uppercase;
+    a {
+      font-size: 18px;
+      font-weight: bold;
+      color: $colorAnchors;
+      &.active {
+        color: rgba(156, 115, 197, 0.562);
+        @include subrayado--doble(sienna,sienna);      
+      }
+    }
+  }
+}
+

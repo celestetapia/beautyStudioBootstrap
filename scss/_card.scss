@@ -1,0 +1,12 @@
+@import "variables";
+/* ===================CARD====================== */
+.card {
+  background-color: map-get($variablesGlobales,colorCard);
+  align-items: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

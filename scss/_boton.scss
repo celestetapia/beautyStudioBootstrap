@@ -1,0 +1,19 @@
+.boton {
+  border-radius: 20px;
+  border: 2px solid black;
+  border-color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+.boton--enviar {
+  @extend .boton;
+  background-color: rgba(167, 45, 179, 0.459);
+  padding: 1% 6%;
+}
+
+.boton--ver--mas{
+  @extend .boton;
+  background-color: rgba(90, 37, 134, 0.527);
+  color: whitesmoke;
+  
+}

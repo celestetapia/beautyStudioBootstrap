@@ -1,0 +1,21 @@
+
+/* ===================MIXINS====================== */
+@mixin subrayado--doble($colorTop: black,$colorBottom: black){
+  @if $colorTop {
+  border-top-color: $colorTop;
+  }
+  @else if $colorTop = black {
+    border-top-color: black;
+  }
+
+  @if $colorBottom {
+  border-bottom-color: $colorBottom;
+  }
+  @else if $colorBottom = black {
+    border-bottom-color: black;
+  }
+  border-top-width: 2px;
+  border-top-style: dotted;
+  border-bottom-width: 2px;
+  border-bottom-style: dotted;
+}

@@ -1,9 +1,18 @@
 /* IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@import "variables";
+@import "mixins";
+@import "boton";
+@import "menu";
+@import "card";
 
-/* ===================VARIABLES GLOBALES====================== */
-$whiteShadow: 0 0 8px rgb(206, 118, 118);
-$colorCard: rgba(255, 255, 255, 0.541);
+@each $red, $color in $redes {
+  .icono--#{$red}{
+    color: $color;
+    font-size: 2rem;
+    padding: 4px;
+  }
+}
 
 /* ===================BODY====================== */
 body {
@@ -15,65 +24,8 @@ body {
   }
 }
 
-/* ===================MENU====================== */
-#menu {
-  /* VARIABLES LOCALES */
-  $colorAnchors: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .navbar-brand {
-    text-shadow: $whiteShadow;
-  }
-
-  li {
-    text-transform: uppercase;
-    a {
-      font-size: 18px;
-      font-weight: bold;
-      color: $colorAnchors;
-      &.active {
-        color: rgba(156, 115, 197, 0.562);
-        border-top-width: 2px;
-        border-top-style: dotted;
-        border-top-color: sienna;
-        border-bottom-width: 2px;
-        border-bottom-style: dotted;
-        border-bottom-color: sienna;
-      }
-    }
-  }
-}
-
-/* ===================CARD====================== */
-.card {
-  background-color: $colorCard;
-  align-items: center;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 /* ===================SUBRAYADO====================== */
 .subRayado {
-  text-shadow: $whiteShadow;
+  text-shadow: map-get($variablesGlobales,whiteShadow);
   color: rgb(155, 53, 141);
-}
-
-$redes: ( /* Definicion de mapas de redes sociales */
-  twitter: rgb(143, 238, 255),
-  facebook: rgb(151, 143, 255),
-  instagram: rgb(220, 143, 255),
-);
-
-@each $red, $color in $redes {
-  .icono--#{$red}{
-    color: $color;
-    font-size: 2rem;
-    padding: 4px;
-  }
 }

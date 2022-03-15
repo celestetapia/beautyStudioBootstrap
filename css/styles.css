@@ -1,5 +1,5 @@
 /* ===================MENU======================= */
-h5 {
+h5, h2.card-title {
     text-align: center;
     font-size: 1.9rem;
     text-shadow: 1px 1px 2px black, 0 0 1em rgb(117, 117, 199),
@@ -60,14 +60,14 @@ p {
 
 @media (min-width:1200px) {
     body {
-        background-color: rgba(255, 2, 171, 0.226);
+        background-color: rgba(221, 202, 218, 0.836);
     }
     nav#menu {
         background-color: #f5f5f5;
         background-image: linear-gradient(to right, #e97be498, rgba(211, 137, 137, 0.363)) !important;
     }
 
-     h5 {
+    h5, h2.card-title {
         font-size: 2rem;
     }
      .team > p{
@@ -94,7 +94,7 @@ p {
     .team p{
         font-size: 1.3rem;
     }
-    h5 {
+    h5, h2.card-title {
         font-size: 1.8rem;
     }
     #local {
@@ -136,7 +136,7 @@ p {
     .team p{
         font-size: 1rem;
     }
-    h5 {
+    h5, h2.card-title {
         font-size: 1.5rem;
     }
 }
