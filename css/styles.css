@@ -125,12 +125,8 @@ p {
         padding-top: 30px;
     }
 
-    #intro, #equipo {
+    #intro, .equipo {
         width: 90% !important;
-    }
-
-    #equipo p {
-        display: none;
     }
     
     .team p{

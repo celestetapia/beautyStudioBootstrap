@@ -1,7 +1,7 @@
 /* ===================MAPAS====================== */
 $variablesGlobales: ( /* Definicion de mapas de variables globales */
   whiteShadow: 0 0 8px rgb(206, 118, 118),
-  colorCard: rgba(255, 255, 255, 0.541),
+  colorCard: rgba(255, 255, 255, 0.425),
 );
 
 $redes: ( /* Definicion de mapas de redes sociales */
@@ -9,3 +9,5 @@ $redes: ( /* Definicion de mapas de redes sociales */
   facebook: rgb(151, 143, 255),
   instagram: rgb(220, 143, 255),
 );
+
+$bordeTransparente: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
