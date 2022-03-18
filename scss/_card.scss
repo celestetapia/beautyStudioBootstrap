@@ -4,7 +4,13 @@
   background-color: map-get($variablesGlobales,colorCard);
   align-items: center;
   box-shadow: $bordeTransparente;
+  border-radius: $borde;
+  img {
+    border-radius: $borde;
+
+  }
 }
+
 
 .card-body {
   display: flex;

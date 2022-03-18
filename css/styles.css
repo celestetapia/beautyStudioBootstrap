@@ -43,7 +43,9 @@ h5, h2.card-title {
 }
 
 p {
-    color: darkmagenta;
+    color: rgb(245, 127, 127);
+    -webkit-text-stroke: #7d4380 0.7px;
+    letter-spacing: 0.3px;
 }
 
 .parrafoDeInformacion {
@@ -60,11 +62,19 @@ p {
 
 @media (min-width:1200px) {
     body {
-        background-color: rgba(221, 202, 218, 0.836);
+        
+        background: url(/img/background.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        
+        
+
     }
     nav#menu {
         background-color: #f5f5f5;
-        background-image: linear-gradient(to right, #e97be498, rgba(211, 137, 137, 0.363)) !important;
+        background-image: linear-gradient(to right, #d89ed298, rgb(255, 159, 175)) !important;
     }
 
     h5, h2.card-title {
@@ -80,11 +90,11 @@ p {
 
 @media (min-width:576px) and (max-width:1200px)  {
     nav#menu {
-        background-color: #f5f5f5;
-        background-image: linear-gradient(to right, #85c29c94, rgba(137, 211, 143, 0.363)) !important;
+        background-color: #fc9797;
+        background-image: linear-gradient(to right, #e762da98, rgba(229, 209, 230, 0.603)) !important;
     }
     body {
-        background-color: rgba(19, 255, 184, 0.11);
+        background-color: rgba(238, 163, 232, 0.63);
 
     }
     .icono-wrap {
@@ -106,23 +116,45 @@ p {
     #intro p, #servicios li {
         font-size: large;
     }
+    .container--card--doble {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    }
+
 }
 
 
 @media (max-width:576px) {
+      
     body {
-        background-color: rgba(202, 118, 165, 0.541);
-    }
+        background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#ffffff, #bb56a5);
+        background-color: rgba(238, 223, 231, 0.89);
+        background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+        background-repeat: repeat;
+      }
 
     nav#menu {
         background-color: #f5f5f5;
-        background-image: linear-gradient(to left, #c57ece94, rgba(211, 119, 142, 0.671)) !important;
+        background-image: linear-gradient(to right, #c84dd894, rgba(238, 213, 219, 0.671)) !important;
+    }
+
+    .container--card--doble {
+        display: flex;
+        flex-direction: column;
+
     }
 
     #local {
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 30px;
+    }
+    #local li {
+        font-size: 1rem;
     }
 
     #intro, .equipo {
@@ -135,4 +167,5 @@ p {
     h5, h2.card-title {
         font-size: 1.5rem;
     }
+
 }

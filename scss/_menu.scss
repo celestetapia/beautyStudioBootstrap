@@ -9,6 +9,9 @@
   justify-content: space-between;
   align-items: center;
 
+  border-radius: $borde;
+  box-shadow: $bordeTransparente;
+  
   .navbar-brand {
     text-shadow: map-get($variablesGlobales,whiteShadow);
   }

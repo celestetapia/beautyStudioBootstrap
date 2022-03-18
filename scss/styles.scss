@@ -1,10 +1,10 @@
 /* IMPORTS */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
-@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');@import "variables";
 @import "mixins";
 @import "boton";
 @import "menu";
 @import "card";
+@import "carddoble";
 
 @each $red, $color in $redes {
   .icono--#{$red}{
@@ -16,14 +16,23 @@
 
 /* ===================BODY====================== */
 body {
-  font-family: 'DM Serif Text', serif;
+  font-family: 'Dosis', sans-serif;
   overflow-x: hidden;
   margin: 0.7%;
   a {
     text-decoration: none;
   }
+
 }
 
+.borde--redondeado {
+  border-radius: $borde;
+}
+
+header {
+  box-shadow: $bordeTransparente;
+  @extend .borde--redondeado;
+ }
 .parrafoDeInformacion {
   display: flex;
   flex-direction: column;
@@ -52,3 +61,8 @@ body {
 .borde--Transparente, #local {
   box-shadow: $bordeTransparente;
 }
+.borde--redondeado {
+  border-radius: $borde;
+}
+
+
