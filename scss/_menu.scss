@@ -20,12 +20,12 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     a {
-      font-size: 18px;
-      font-weight: bold;
+      font-size: 1.6rem;
+      font-weight: bold ;
       color: $colorAnchors;
       &.active {
-        color: rgba(156, 115, 197, 0.562);
-        @include subrayado--doble(sienna,sienna);      
+        color: rgba(197, 115, 170, 0.801);
+        @include subrayado--doble(rgb(160, 45, 108),rgb(160, 45, 89));      
       }
     }
   }

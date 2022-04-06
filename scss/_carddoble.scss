@@ -42,6 +42,8 @@
   .container--card--doble .card--doble .image img {
     max-width : 100%;
     border-radius : 15px;
+    display: flex;
+    justify-content: center;
   }
   
   .container--card--doble .card--doble .card--doble--content {

@@ -1,0 +1,188 @@
+.grid--servicios {
+	display: grid;
+	place-items: center;
+}
+
+.grid--servicios--container {
+	display: grid;
+	grid-gap: 1rem;
+	padding: 1rem;
+	grid-template-columns: repeat(4, 1fr);
+    text-decoration: none;
+    
+}
+
+.grid--servicios--card {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	border-radius: 10px;
+	box-shadow:
+		0 1px 1px rgba(0, 0, 0, 0.1),
+		0 2px 2px rgba(0, 0, 0, 0.1),
+		0 4px 4px rgba(0, 0, 0, 0.1),
+		0 8px 8px rgba(0, 0, 0, 0.1),
+		0 16px 16px rgba(0, 0, 0, 0.1);
+	height: 350px;
+    a {
+        color: white;
+    }
+}
+
+.grid--servicios--card:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 110%;
+	background-size: cover;
+	background-position: 0 0;
+	transition: transform
+		calc(var(850ms) * 1.5)
+		var(cubic-bezier(0.19, 1, 0.22, 1));
+}
+
+.grid--servicios--card:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200%;
+	background-image: linear-gradient(
+		to bottom, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.009) 11.7%,
+		rgba(0, 0, 0, 0.034) 22.1%,
+		rgba(0, 0, 0, 0.072) 31.2%,
+		rgba(0, 0, 0, 0.123) 39.4%,
+		rgba(0, 0, 0, 0.182) 46.6%,
+		rgba(0, 0, 0, 0.249) 53.1%,
+		rgba(0, 0, 0, 0.32) 58.9%,
+		rgba(0, 0, 0, 0.394) 64.3%,
+		rgba(0, 0, 0, 0.468) 69.3%,
+		rgba(0, 0, 0, 0.54) 74.1%,
+		rgba(0, 0, 0, 0.607) 78.8%,
+		rgba(0, 0, 0, 0.668) 83.6%,
+		rgba(0, 0, 0, 0.721) 88.7%,
+		rgba(0, 0, 0, 0.762) 94.1%,
+		rgba(0, 0, 0, 0.79) 100%);
+	transform: translateY(-50%);
+
+	transition: transform calc(var(850ms) * 2)
+		var(cubic-bezier(0.19, 1, 0.22, 1));
+}
+
+.grid--servicios--card:nth-child(1):before {
+	background-image: url("/img/manicura-min.jpg");
+}
+    
+
+.grid--servicios--card:nth-child(2):before {
+	background-image: url("/img/pedicure-min.jpg")
+}
+
+.grid--servicios--card:nth-child(3):before {
+    background-image: url("/img/pestanias-min.jpg")
+}
+
+
+.grid--servicios--card:nth-child(4):before {
+    background-image: url("/img/ojos.jpg")
+}
+
+
+.grid--servicios--card--content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+	transition: transform var(850ms)
+		var(cubic-bezier(0.19, 1, 0.22, 1));
+	z-index: 1;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.data {
+	margin-top: 1rem;
+	font-size: 1.4rem;
+	
+	line-height: 1.35;
+    color: aliceblue !important;
+}
+
+.grid--servicios--card:after {
+	transform: translateY(0);
+}
+
+.grid--servicios--card--content {
+	transform: translateY(calc(100% - 4.5rem));
+}
+
+.grid--servicios--card--content>*:not(.title) {
+	opacity: 0;
+	transform: translateY(1rem);
+	transition: transform var(850ms)
+		var(cubic-bezier(0.19, 1, 0.22, 1)),
+		opacity var(850ms)
+		var(cubic-bezier(0.19, 1, 0.22, 1));
+}
+
+.grid--servicios--card:hover,
+.grid--servicios--card:focus-within {
+	align-items: center;
+}
+
+.grid--servicios--card:hover:before,
+.grid--servicios--card:focus-within:before {
+	transform: translateY(-4%);
+}
+
+.grid--servicios--card:hover:after,
+.grid--servicios--card:focus-within:after {
+	transform: translateY(-50%);
+}
+
+.grid--servicios--card:hover .grid--servicios--card--content,
+.grid--servicios--card:focus-within .grid--servicios--card--content {
+	transform: translateY(0);
+}
+
+.grid--servicios--card:hover .grid--servicios--card--content>*:not(.title),
+.grid--servicios--card:focus-within .grid--servicios--card--content>*:not(.title) {
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: calc(var(850ms) / 8);
+}
+
+@media (min-width:576px) and (max-width:1200px)  {
+
+    .grid--servicios--container {
+        display: grid;
+        grid-gap: 1rem;
+        padding: 1rem;
+        grid-template-columns: auto;
+    }
+
+}
+@media (max-width:576px) {
+
+    .grid--servicios--container {
+        display: grid;
+        grid-gap: 1rem;
+        padding: 1rem;
+        grid-template-columns: auto;
+    }
+}
+    

@@ -5,6 +5,13 @@
 @import "menu";
 @import "card";
 @import "carddoble";
+@import "nuevascards";
+@import "footer";
+@import "galeria";
+@import "servicios";
+
+
+
 
 @each $red, $color in $redes {
   .icono--#{$red}{
@@ -15,6 +22,10 @@
 }
 
 /* ===================BODY====================== */
+
+
+
+
 body {
   font-family: 'Dosis', sans-serif;
   overflow-x: hidden;
@@ -33,6 +44,7 @@ header {
   box-shadow: $bordeTransparente;
   @extend .borde--redondeado;
  }
+ 
 .parrafoDeInformacion {
   display: flex;
   flex-direction: column;
@@ -48,7 +60,7 @@ header {
   }
   
   li {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -64,5 +76,156 @@ header {
 .borde--redondeado {
   border-radius: $borde;
 }
+
+
+
+
+/* ===================MEDIA QUERIES====================== */
+
+@media (min-width:1200px) {
+  body {
+      
+      background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f59ccd54 10px ), repeating-linear-gradient( #ee8ebb83, #ed9aac44 );
+      
+  }
+
+
+  nav#menu {
+      background-color: #f5f5f5;
+      background-image: linear-gradient(to right, #d89ed298, rgb(255, 159, 175)) !important;
+  }
+
+
+  h5, h2.card-title {
+      font-size: 2rem;
+  }
+ 
+
+  #intro p, #servicios li {
+      font-size: x-large;
+  }
+
+
+}
+
+
+
+
+@media (min-width:576px) and (max-width:1200px)  {
+
+
+  body {
+      background-color: rgba(238, 163, 232, 0.63);
+
+  }
+
+
+  nav#menu {
+      background-color: #fc9797;
+      background-image: linear-gradient(to right, #e762da98, rgba(229, 209, 230, 0.603)) !important;
+  }
+
+
+  .icono-wrap {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .titulo--servicios {
+    font-size: 4rem;
+    
+  }
+  h5, h2.card-title {
+      font-size: 1.8rem;
+  }
+
+
+  #local {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 30px;
+
+  }
+
+
+  #intro p, #servicios li {
+      font-size: large;
+  }
+
+
+  .container--card--doble {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+}
+
+
+
+
+@media (max-width:576px) {
+    
+ 
+  body{
+      
+      background: linear-gradient(288deg, #f3b2bb9c 0%, #ffb5ea 100%);
+  }
+
+  nav#menu {
+      background: linear-gradient(288deg, #db82a1 0%, #d681a1 100%);
+  }
+
+  .container--card--doble {
+      display: flex;
+      flex-direction: column;
+
+  }
+
+  #local {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 30px;
+  }
+  #local li {
+      font-size: 1.2rem;
+  }
+
+  #intro, .equipo {
+      width: 90% !important;
+  }
+  
+  .team p{
+      font-size: 1.5rem;
+  }
+  h5, h2.card-title {
+      font-size: 1.5rem;
+  }
+
+  .titulo--servicios {
+     font-size: 2.6rem;
+     margin-top: 5%;
+  }
+  .informacion--servicios p {
+      text-align: center;
+      font-size: 1rem;
+      padding: 2%;
+      margin: 10%;
+     
+     }
+   
+   
+     .parrafoDeInformacion h3 {
+       font-weight: bold;
+       font-size: 1.7rem;
+       
+   
+     }
+     
+   
+  
+}
+
 
 

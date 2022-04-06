@@ -9,8 +9,13 @@
     border-radius: $borde;
 
   }
-}
 
+}
+.card-text {
+  font-size: 1.4rem;
+  color: rgb(74, 19, 99);
+  letter-spacing: 0.3px;
+}
 
 .card-body {
   display: flex;

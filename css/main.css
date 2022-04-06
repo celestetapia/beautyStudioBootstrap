@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
 /* ===================MAPAS====================== */
 /* ===================MIXINS====================== */
+@import url(https://fonts.googleapis.com/css?family=Erica+One);
 .boton, .boton--enviar, .boton--ver--mas {
   border-radius: 20px;
   border: 2px solid black;
@@ -24,7 +25,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 16px 16px 16px 16px;
+  border-radius: 16px 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   #menu .navbar-brand {
     text-shadow: 0 0 8px #ce7676; }
@@ -32,13 +33,13 @@
     text-transform: uppercase;
     letter-spacing: 0.1em; }
     #menu li a {
-      font-size: 18px;
+      font-size: 1.6rem;
       font-weight: bold;
       color: white; }
       #menu li a.active {
-        color: rgba(156, 115, 197, 0.562);
-        border-top-color: sienna;
-        border-bottom-color: sienna;
+        color: rgba(197, 115, 170, 0.801);
+        border-top-color: #a02d6c;
+        border-bottom-color: #a02d59;
         border-top-width: 2px;
         border-top-style: dotted;
         border-bottom-width: 2px;
@@ -50,9 +51,14 @@
   background-color: rgba(255, 255, 255, 0.425);
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 16px 16px 16px 16px; }
+  border-radius: 16px 16px; }
   .card img {
-    border-radius: 16px 16px 16px 16px; }
+    border-radius: 16px 16px; }
+
+.card-text {
+  font-size: 1.4rem;
+  color: #4a1363;
+  letter-spacing: 0.3px; }
 
 .card-body {
   display: flex;
@@ -92,7 +98,9 @@
 
 .container--card--doble .card--doble .image img {
   max-width: 100%;
-  border-radius: 15px; }
+  border-radius: 15px;
+  display: flex;
+  justify-content: center; }
 
 .container--card--doble .card--doble .card--doble--content {
   position: relative;
@@ -110,6 +118,296 @@
   opacity: 1;
   transition-delay: 0.2s; }
 
+.grid--servicios {
+  display: grid;
+  place-items: center; }
+
+.grid--servicios--container {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  text-decoration: none; }
+
+.grid--servicios--card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  height: 350px; }
+  .grid--servicios--card a {
+    color: white; }
+
+.grid--servicios--card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(850ms) * 1.5) var(cubic-bezier(0.19, 1, 0.22, 1)); }
+
+.grid--servicios--card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(850ms) * 2) var(cubic-bezier(0.19, 1, 0.22, 1)); }
+
+.grid--servicios--card:nth-child(1):before {
+  background-image: url("/img/manicura-min.jpg"); }
+
+.grid--servicios--card:nth-child(2):before {
+  background-image: url("/img/pedicure-min.jpg"); }
+
+.grid--servicios--card:nth-child(3):before {
+  background-image: url("/img/pestanias-min.jpg"); }
+
+.grid--servicios--card:nth-child(4):before {
+  background-image: url("/img/ojos.jpg"); }
+
+.grid--servicios--card--content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(850ms) var(cubic-bezier(0.19, 1, 0.22, 1));
+  z-index: 1; }
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2; }
+
+.data {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.35;
+  color: aliceblue !important; }
+
+.grid--servicios--card:after {
+  transform: translateY(0); }
+
+.grid--servicios--card--content {
+  transform: translateY(calc(100% - 4.5rem)); }
+
+.grid--servicios--card--content > *:not(.title) {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: transform var(850ms) var(cubic-bezier(0.19, 1, 0.22, 1)), opacity var(850ms) var(cubic-bezier(0.19, 1, 0.22, 1)); }
+
+.grid--servicios--card:hover,
+.grid--servicios--card:focus-within {
+  align-items: center; }
+
+.grid--servicios--card:hover:before,
+.grid--servicios--card:focus-within:before {
+  transform: translateY(-4%); }
+
+.grid--servicios--card:hover:after,
+.grid--servicios--card:focus-within:after {
+  transform: translateY(-50%); }
+
+.grid--servicios--card:hover .grid--servicios--card--content,
+.grid--servicios--card:focus-within .grid--servicios--card--content {
+  transform: translateY(0); }
+
+.grid--servicios--card:hover .grid--servicios--card--content > *:not(.title),
+.grid--servicios--card:focus-within .grid--servicios--card--content > *:not(.title) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: calc(var(850ms) / 8); }
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .grid--servicios--container {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: auto; } }
+
+@media (max-width: 576px) {
+  .grid--servicios--container {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: auto; } }
+
+footer a {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: aliceblue; }
+
+/* ===================MAPAS====================== */
+#cuerpo--galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  font-family: 'Arvo', monospace; }
+  @supports (display: grid) {
+    #cuerpo--galeria {
+      display: block; } }
+
+.section {
+  display: none;
+  padding: 1rem; }
+  @media screen and (min-width: 768px) {
+    .section {
+      padding: 2rem; } }
+  @supports (display: grid) {
+    .section {
+      display: block; } }
+
+h1 {
+  font-size: 2rem; }
+
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: row dense; }
+
+.item {
+  position: relative;
+  border-radius: 16px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: #0c9a9a;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  background: url(../img/foto180000-min.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  counter-increment: item-counter; }
+  .item:nth-of-type(3n) {
+    background-image: url(../img/manicura-min.jpg); }
+  .item:nth-of-type(4n) {
+    background-image: url(../img/foto180000-min.jpg); }
+  .item:nth-of-type(5n) {
+    background-image: url(../img/pedicure-min.jpg); }
+  .item:nth-of-type(6n) {
+    background-image: url(../img/pestanias-min.jpg); }
+  .item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out; }
+  .item:hover {
+    transform: scale(1.05); }
+    .item:hover:after {
+      opacity: 0; }
+  .item--medium {
+    grid-row-end: span 2; }
+  .item--large {
+    grid-row-end: span 3; }
+  .item--full {
+    grid-column-end: auto; }
+    @media screen and (min-width: 768px) {
+      .item--full {
+        grid-column: 1/-1;
+        grid-row-end: span 2; } }
+  .item__details {
+    position: relative;
+    z-index: 1;
+    padding: 5px;
+    background: rgba(175, 47, 169, 0.192);
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    color: #ffffff; }
+    .item__details:before {
+      content: counter(item-counter);
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding-right: 0.5em;
+      color: #444; }
+
+.titulo--servicios {
+  cursor: default;
+  position: relative;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  display: block;
+  -webkit-animation: bounce 2s ease infinite alternate;
+  font-family: 'Erica One', cursive;
+  font-size: 80px;
+  color: #FFF;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6); }
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -2px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 30px 30px rgba(0, 0, 0, 0.3); } }
+
+.informacion, .informacion--bg {
+  display: flex;
+  margin-bottom: 3%;
+  background-color: rgba(209, 150, 209, 0.473);
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 192, 203, 0.651);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  overflow: hidden; }
+
+::selection {
+  background: transparent; }
+
+.informacion--bg {
+  background-color: rgba(235, 236, 236, 0.473); }
+
+.informacion--servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1; }
+  .informacion--servicios p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 4rem 2rem; }
+
+.parrafoDeInformacion h3 {
+  font-weight: bold;
+  font-size: 3rem; }
+
 .icono--twitter {
   color: #8feeff;
   font-size: 2rem;
@@ -125,6 +423,11 @@
   font-size: 2rem;
   padding: 4px; }
 
+.icono--linkedin {
+  color: #605dff;
+  font-size: 2rem;
+  padding: 4px; }
+
 /* ===================BODY====================== */
 body {
   font-family: 'Dosis', sans-serif;
@@ -134,7 +437,7 @@ body {
     text-decoration: none; }
 
 .borde--redondeado, header {
-  border-radius: 16px 16px 16px 16px; }
+  border-radius: 16px 16px; }
 
 header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
@@ -150,7 +453,7 @@ header {
   .parrafoDeInformacion p {
     font-size: 2rem; }
   .parrafoDeInformacion li {
-    font-size: 1.2rem; }
+    font-size: 1.5rem; }
 
 /* ===================SUBRAYADO====================== */
 .subRayado, .parrafoDeInformacion p {
@@ -161,4 +464,73 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .borde--redondeado, header {
-  border-radius: 16px 16px 16px 16px; }
+  border-radius: 16px 16px; }
+
+/* ===================MEDIA QUERIES====================== */
+@media (min-width: 1200px) {
+  body {
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #f59ccd54 10px), repeating-linear-gradient(#ee8ebb83, #ed9aac44); }
+  nav#menu {
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to right, #d89ed298, #ff9faf) !important; }
+  h5, h2.card-title {
+    font-size: 2rem; }
+  #intro p, #servicios li {
+    font-size: x-large; } }
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  body {
+    background-color: rgba(238, 163, 232, 0.63); }
+  nav#menu {
+    background-color: #fc9797;
+    background-image: linear-gradient(to right, #e762da98, rgba(229, 209, 230, 0.603)) !important; }
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .titulo--servicios {
+    font-size: 4rem; }
+  h5, h2.card-title {
+    font-size: 1.8rem; }
+  #local {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px; }
+  #intro p, #servicios li {
+    font-size: large; }
+  .container--card--doble {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; } }
+
+@media (max-width: 576px) {
+  body {
+    background: linear-gradient(288deg, #f3b2bb9c 0%, #ffb5ea 100%); }
+  nav#menu {
+    background: linear-gradient(288deg, #db82a1 0%, #d681a1 100%); }
+  .container--card--doble {
+    display: flex;
+    flex-direction: column; }
+  #local {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px; }
+  #local li {
+    font-size: 1.2rem; }
+  #intro, .equipo {
+    width: 90% !important; }
+  .team p {
+    font-size: 1.5rem; }
+  h5, h2.card-title {
+    font-size: 1.5rem; }
+  .titulo--servicios {
+    font-size: 2.6rem;
+    margin-top: 5%; }
+  .informacion--servicios p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 2%;
+    margin: 10%; }
+  .parrafoDeInformacion h3 {
+    font-weight: bold;
+    font-size: 1.7rem; } }
