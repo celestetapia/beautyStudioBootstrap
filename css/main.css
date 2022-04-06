@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
 /* ===================MAPAS====================== */
 /* ===================MIXINS====================== */
-@import url(https://fonts.googleapis.com/css?family=Erica+One);
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 .boton, .boton--enviar, .boton--ver--mas {
   border-radius: 20px;
   border: 2px solid black;
@@ -166,16 +166,16 @@
   transition: transform calc(var(850ms) * 2) var(cubic-bezier(0.19, 1, 0.22, 1)); }
 
 .grid--servicios--card:nth-child(1):before {
-  background-image: url("../img/manicura-min.jpg"); }
+  background-image: url("../img/galeria/manicureCard1.jpg"); }
 
 .grid--servicios--card:nth-child(2):before {
-  background-image: url("../img/pedicure-min.jpg"); }
+  background-image: url("../img/galeria/pedicureCard1.webp"); }
 
 .grid--servicios--card:nth-child(3):before {
   background-image: url("../img/pestanias-min.jpg"); }
 
 .grid--servicios--card:nth-child(4):before {
-  background-image: url("../img/ojos.jpg"); }
+  background-image: url("../img/galeria/trabajocejas1.webp"); }
 
 .grid--servicios--card--content {
   position: relative;
@@ -237,7 +237,7 @@
     padding: 1rem;
     grid-template-columns: auto; } }
 
-@media (max-width: 476px) {
+@media (max-width: 576px) {
   .grid--servicios--container {
     display: grid;
     grid-gap: 1rem;
@@ -302,21 +302,37 @@ h1 {
   grid-column-start: auto;
   grid-row-start: auto;
   color: #fff;
-  background: url(../img/foto180000-min.jpg);
+  background: url(../img/galeria/trabajomanicura1.jpg);
   background-size: cover;
   background-position: center;
   box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
   counter-increment: item-counter; }
-  .item:nth-of-type(3n) {
-    background-image: url(../img/manicura-min.jpg); }
-  .item:nth-of-type(4n) {
-    background-image: url(../img/foto180000-min.jpg); }
-  .item:nth-of-type(5n) {
-    background-image: url(../img/pedicure-min.jpg); }
-  .item:nth-of-type(6n) {
-    background-image: url(../img/pestanias-min.jpg); }
+  .item:nth-of-type(2) {
+    background-image: url(../img/galeria/trabajocejas1.webp); }
+  .item:nth-of-type(3) {
+    background-image: url(../img/galeria/teamBeautyManicure2.webp); }
+  .item:nth-of-type(4) {
+    background-image: url(../img/galeria/trabajomanicura3.webp); }
+  .item:nth-of-type(5) {
+    background-image: url(../img/galeria/trabajoPedicura1.webp); }
+  .item:nth-of-type(6) {
+    background-image: url(../img/galeria/trabajomanicura4.webp); }
+  .item:nth-of-type(7) {
+    background-image: url(../img/galeria/pestanasdiseno.webp); }
+  .item:nth-of-type(8) {
+    background-image: url(../img/galeria/teamBeautyManicure2.webp); }
+  .item:nth-of-type(9) {
+    background-image: url(../img/galeria/trabajomanicure2.webp); }
+  .item:nth-of-type(10) {
+    background-image: url(../img/galeria/pestanasdiseno2.webp); }
+  .item:nth-of-type(11) {
+    background-image: url(../img/galeria/torno1.jpg); }
+  .item:nth-of-type(12) {
+    background-image: url(../img/galeria/trabajomanicura5.jpg); }
+  .item:nth-of-type(13) {
+    background-image: url(../img/galeria/cabinateamBeauty.webp); }
   .item:after {
     content: '';
     position: absolute;
@@ -324,7 +340,8 @@ h1 {
     height: 100%;
     background-color: black;
     opacity: 0.3;
-    transition: opacity 0.3s ease-in-out; }
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 16px 16px; }
   .item:hover {
     transform: scale(1.05); }
     .item:hover:after {
@@ -364,7 +381,7 @@ h1 {
   height: 100px;
   display: block;
   -webkit-animation: bounce 2s ease infinite alternate;
-  font-family: "Erica One", cursive;
+  font-family: 'Acme', sans-serif;
   font-size: 80px;
   color: #fff;
   text-align: center;
@@ -417,16 +434,16 @@ h1 {
       width: 10rem; } }
 
 .informacion--imagen--cejas {
-  background-image: url(../img/pestanias-min.jpg); }
+  background-image: url(../img/galeria/trabajocejas1.webp); }
 
 .informacion--imagen--pestanas {
-  background-image: url(../img/ojos.jpg); }
+  background-image: url(../img/pestanias-min.jpg); }
 
 .informacion--imagen--manicure {
-  background-image: url(../img/manicura-min.jpg); }
+  background-image: url(../img/galeria/manicureCard2.jpg); }
 
 .informacion--imagen--pedicure {
-  background-image: url(../img/pedicure-min.jpg); }
+  background-image: url(../img/galeria/pedicureCard1.jpg); }
 
 .informacion--servicios {
   display: flex;
@@ -436,7 +453,7 @@ h1 {
   .informacion--servicios p {
     text-align: center;
     font-size: 1.5rem;
-    margin: 4rem 2rem; }
+    margin: 2em 4rem; }
 
 .parrafoDeInformacion h3 {
   font-weight: bold;
@@ -537,7 +554,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around; } }
 
-@media (max-width: 576px) {
+@media (min-width: 106px) and (max-width: 576px) {
   body {
     background: linear-gradient(288deg, #f3b2bb9c 0%, #ffb5ea 100%); }
   nav#menu {
@@ -558,14 +575,14 @@ header {
   h5, h2.card-title {
     font-size: 1.5rem; }
   .titulo--servicios {
-    font-size: 2rem;
+    font-size: 2.7rem;
     margin-top: 5%;
     display: flex;
     justify-content: center; }
   .informacion--servicios p {
     text-align: center;
     font-size: 1rem;
-    margin: 2%; }
+    margin: 3% 4%; }
   .parrafoDeInformacion h3 {
     font-weight: bold;
     font-size: 1.9rem; } }

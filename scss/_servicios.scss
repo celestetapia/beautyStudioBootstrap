@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Erica+One);
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 
 $clr-pink: pink;
 $clr-pink-900: rgb(255, 0, 255);
@@ -19,8 +20,8 @@ $bordeRedondo: 50%;
 
   -webkit-animation: bounce 2s ease infinite alternate;
 
-  font-family: "Erica One", cursive;
-  font-size: 80px;
+  font-family: 'Acme', sans-serif;
+    font-size: 80px;
   color: #fff;
   text-align: center;
   line-height: 100px;
@@ -90,23 +91,23 @@ $bordeRedondo: 50%;
 
 .informacion--imagen--cejas {
   @extend .informacion--imagen;
-  background-image: url(../img/pestanias-min.jpg);
+  background-image: url(../img/galeria/trabajocejas1.webp);
   
 }
 
 .informacion--imagen--pestanas {
   @extend .informacion--imagen;
-  background-image: url(../img/ojos.jpg);
+  background-image: url(../img/pestanias-min.jpg);
 }
 
 .informacion--imagen--manicure {
   @extend .informacion--imagen;
-  background-image: url(../img/manicura-min.jpg);
+  background-image: url(../img/galeria/manicureCard2.jpg);
 }
 
 .informacion--imagen--pedicure {
   @extend .informacion--imagen;
-  background-image: url(../img/pedicure-min.jpg);
+  background-image: url(../img/galeria/pedicureCard1.jpg);
 }
 
 .informacion--servicios {
@@ -117,7 +118,7 @@ $bordeRedondo: 50%;
   p {
     text-align: center;
     font-size: 1.5rem;
-    margin: 4rem 2rem;
+    margin: 2em 4rem;
   }
 }
 

@@ -78,12 +78,12 @@
 }
 
 .grid--servicios--card:nth-child(1):before {
-	background-image: url("../img/manicura-min.jpg");
+	background-image: url("../img/galeria/manicureCard1.jpg");
 }
     
 
 .grid--servicios--card:nth-child(2):before {
-	background-image: url("../img/pedicure-min.jpg")
+	background-image: url("../img/galeria/pedicureCard1.webp")
 }
 
 .grid--servicios--card:nth-child(3):before {
@@ -92,7 +92,7 @@
 
 
 .grid--servicios--card:nth-child(4):before {
-    background-image: url("../img/ojos.jpg")
+    background-image: url("../img/galeria/trabajocejas1.webp")
 }
 
 
@@ -176,7 +176,7 @@
     }
 
 }
-@media (max-width:476px) {
+@media (max-width:576px) {
 
     .grid--servicios--container {
         display: grid;
