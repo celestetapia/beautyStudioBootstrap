@@ -1,13 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Erica+One);
 
-
 $clr-pink: pink;
 $clr-pink-900: rgb(255, 0, 255);
 $clr-white: white;
 $clr-violet: rgb(172, 32, 172);
+$bordeRedondo: 50%;
 
-.titulo--servicios{
-  
+.titulo--servicios {
   cursor: default;
   position: relative;
   top: 20px;
@@ -15,68 +14,48 @@ $clr-violet: rgb(172, 32, 172);
   right: 0;
   bottom: 0;
   height: 100px;
- 
+
   display: block;
-  
+
   -webkit-animation: bounce 2s ease infinite alternate;
-  
-  font-family: 'Erica One', cursive;
+
+  font-family: "Erica One", cursive;
   font-size: 80px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   line-height: 100px;
-  text-shadow: 0 1px 0 #CCC,
-               0 2px 0 #CCC,
-               0 3px 0 #CCC,
-               0 4px 0 #CCC,
-               0 5px 0 #CCC,
-               0 6px 0 transparent,
-               0 7px 0 transparent,
-               0 8px 0 transparent,
-               0 9px 0 transparent,
-               0 10px 10px rgba(0, 0, 0, .6);
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
 }
 /* ANIMATION */
 @-webkit-keyframes bounce {
   100% {
     top: -2px;
-    
-    text-shadow: 0 1px 0 #CCC,
-                 0 2px 0 #CCC,
-                 0 3px 0 #CCC,
-                 0 4px 0 #CCC,
-                 0 5px 0 #CCC,
-                 0 6px 0 #CCC,
-                 0 7px 0 #CCC,
-                 0 8px 0 #CCC,
-                 0 9px 0 #CCC,
-                 0 30px 30px rgba(0, 0, 0, .3);
-  }
 
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 30px 30px rgba(0, 0, 0, 0.3);
+  }
 }
 
-
 .informacion {
- display: flex;
- margin-bottom: 3%;
- background-color: rgba(209, 150, 209, 0.473);
+  display: flex;
+  margin-bottom: 3%;
+  background-color: rgba(209, 150, 209, 0.473);
   position: relative;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;  
+  width: 100%;
   height: 100%;
   background-color: rgba(255, 192, 203, 0.651);
- 
+
   background-attachment: fixed;
   background-size: 100% 100%;
   overflow: hidden;
 }
-
-
-
-
 
 ::selection {
   background: transparent;
@@ -84,20 +63,61 @@ $clr-violet: rgb(172, 32, 172);
 .informacion--bg {
   @extend .informacion;
   background-color: rgba(235, 236, 236, 0.473);
+}
+
+.informacion--imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
+  width: 30rem;
+  height: 30rem;
+  margin: 1rem 1rem;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: $bordeRedondo;
+  border: rgba(211, 117, 153, 0.685) solid 5px;
+
+  @media screen and (max-width: 768px) {
+    height: 10rem;
+    width: 10rem;
+
+  }
+
 }
 
 
+.informacion--imagen--cejas {
+  @extend .informacion--imagen;
+  background-image: url(../img/pestanias-min.jpg);
+  
+}
+
+.informacion--imagen--pestanas {
+  @extend .informacion--imagen;
+  background-image: url(../img/ojos.jpg);
+}
+
+.informacion--imagen--manicure {
+  @extend .informacion--imagen;
+  background-image: url(../img/manicura-min.jpg);
+}
+
+.informacion--imagen--pedicure {
+  @extend .informacion--imagen;
+  background-image: url(../img/pedicure-min.jpg);
+}
 
 .informacion--servicios {
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  flex: 1; 
- p {
-   text-align: center;
-   font-size: 1.5rem;
-   margin: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 4rem 2rem;
   }
 }
 
@@ -105,7 +125,5 @@ $clr-violet: rgb(172, 32, 172);
   h3 {
     font-weight: bold;
     font-size: 3rem;
-    
-
   }
 }
