@@ -1,16 +1,14 @@
 /* IMPORTS */
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import "variables";
 @import "mixins";
 @import "boton";
 @import "menu";
 @import "card";
-@import "carddoble";
 @import "nuevascards";
 @import "footer";
 @import "galeria";
 @import "servicios";
-
-
 
 
 @each $red, $color in $redes {
@@ -22,10 +20,6 @@
 }
 
 /* ===================BODY====================== */
-
-
-
-
 body {
   font-family: 'Dosis', sans-serif;
   overflow-x: hidden;
@@ -33,7 +27,6 @@ body {
   a {
     text-decoration: none;
   }
-
 }
 
 .borde--redondeado {
@@ -70,6 +63,7 @@ header {
   color: rgb(155, 53, 141);
 }
 
+/* ===================Bordes====================== */
 .borde--Transparente, #local {
   box-shadow: $bordeTransparente;
 }
@@ -78,53 +72,38 @@ header {
 }
 
 
-
-
 /* ===================MEDIA QUERIES====================== */
-
+/* ===================Desktop====================== */
 @media (min-width:1200px) {
   body {
-      
       background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f59ccd54 10px ), repeating-linear-gradient( #ee8ebb83, #ed9aac44 );
-      
   }
-
 
   nav#menu {
       background-color: #f5f5f5;
       background-image: linear-gradient(to right, #d89ed298, rgb(255, 159, 175)) !important;
   }
 
-
   h5, h2.card-title {
       font-size: 2rem;
   }
- 
 
   #intro p, #servicios li {
       font-size: x-large;
   }
-
-
 }
 
-
-
-
+/* ===================Tablet====================== */
 @media (min-width:576px) and (max-width:1200px)  {
-
-
   body {
       background-color: rgba(238, 163, 232, 0.63);
 
   }
 
-
   nav#menu {
       background-color: #fc9797;
       background-image: linear-gradient(to right, #e762da98, rgba(229, 209, 230, 0.603)) !important;
   }
-
 
   .icono-wrap {
       flex-wrap: wrap;
@@ -135,39 +114,26 @@ header {
     font-size: 4rem;
     
   }
+
   h5, h2.card-title {
       font-size: 1.8rem;
   }
-
 
   #local {
       flex-wrap: wrap;
       justify-content: center;
       padding-top: 30px;
-
   }
-
 
   #intro p, #servicios li {
       font-size: large;
   }
 
-
-  .container--card--doble {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-  }
-
 }
 
 
-
-
-@media (min-width:106px) and (max-width:576px) {
-    
- 
+/* ===================Moviles====================== */
+@media (min-width:106px) and (max-width:576px) { 
   body{
       
       background: linear-gradient(288deg, #f3b2bb9c 0%, #ffb5ea 100%);
@@ -177,17 +143,12 @@ header {
       background: linear-gradient(288deg, #db82a1 0%, #d681a1 100%);
   }
 
-  .container--card--doble {
-      display: flex;
-      flex-direction: column;
-
-  }
-
   #local {
       flex-wrap: wrap;
       justify-content: center;
       padding-top: 30px;
   }
+
   #local li {
       font-size: 1.2rem;
   }
@@ -209,24 +170,17 @@ header {
      display: flex;
      justify-content: center;
   }
+
   .informacion--servicios p {
       text-align: center;
-      font-size: 1rem;
-      
+      font-size: 1rem;   
       margin: 3% 4%;
-     
      }
-   
-   
-     .parrafoDeInformacion h3 {
-       font-weight: bold;
-       font-size: 1.9rem;
-       
-   
-     }
-     
-   
-  
+
+  .parrafoDeInformacion h3 {
+    font-weight: bold;
+    font-size: 1.9rem;
+  }
 }
 
 

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-
+/* ===================Variables====================== */
 $clr-pink: pink;
 $clr-pink-900: rgb(255, 0, 255);
 $clr-white: white;
@@ -29,7 +29,8 @@ $bordeRedondo: 50%;
     0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
     0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
 }
-/* ANIMATION */
+
+/* ===================Animacion====================== */
 @-webkit-keyframes bounce {
   100% {
     top: -2px;
@@ -87,7 +88,6 @@ $bordeRedondo: 50%;
   }
 
 }
-
 
 .informacion--imagen--cejas {
   @extend .informacion--imagen;

@@ -1,4 +1,5 @@
 @import "variables";
+
 /* ===================CARD====================== */
 .card {
   background-color: map-get($variablesGlobales,colorCard);
@@ -9,8 +10,8 @@
     border-radius: $borde;
 
   }
-
 }
+
 .card-text {
   font-size: 1.4rem;
   color: rgb(74, 19, 99);
